@@ -17,6 +17,37 @@ This repository contains Python scripts using Manim to visualize properties rela
   This visualizes how the non-trivial zeros are dynamically formed.  
   The script also outputs a `.csv` file containing the detected zeros' locations — specifically, the sigma and t values that nullify the function, generating a local minimum.
 
+## Requirements
+
+- Python 3.7 or higher  
+- [Manim Community Edition](https://docs.manim.community/)  
+- NumPy
+
+### Install dependencies
+```bash
+pip install manim numpy
+```
+
+### How to run
+1. Navigate to the folder containing the scripts:
+   ```bash
+   cd path/to/your/scripts
+   ```
+2. To generate videos:
+   ```bash
+   python -m manim -pqh ScriptName.py SceneName
+   ```
+   Example:
+   ```bash
+   python -m manim -pqh EtaOscillatorsDynamic.py EtaOscillatorsDynamic
+   python -m manim -pqh EtaMagnitudeVsSigmaPlot.py EtaMagnitudeVsSigmaPlot
+   ```
+3. To generate high-resolution imagen:
+   ```bash
+   python -m manim -s -r 3840,2160 EtaOscillatorsStatic.py EtaOscillatorsStatic
+   ```
+   This saves a single frame snapshot at 3840x2160 resolution.
+
 ## Output Locations
 
 - Images are saved to:  
